@@ -1,0 +1,305 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    margin: 0;
+  }
+  
+  .header {
+    background-color: #F8F8F8;
+    padding-top: 45px;
+    padding-bottom: 145px;  
+  }
+  
+  .container {
+    max-width: 1140px;
+    margin: auto;
+  }
+  
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header__top {
+    margin-bottom: 118px;
+  }
+  
+  .logo {
+    font-size: 18px;
+    font-weight: 800;
+  }
+  
+  .nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;  
+  }
+  
+  .nav__item {
+    margin-right: 20px;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .nav__item:last-child {
+    margin-right: 0;
+  }
+  
+  .nav__link {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .phone {
+    font-size: 16px;
+    font-weight: 800;  
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header-content__text {
+   flex-basis: 50%;
+  }
+  
+  .header-content__image {
+   max-width: 600px;
+  }
+  
+  .header-content__title {
+    font-size: 58px;
+    margin-bottom: 23px;
+  }
+  
+  .header-content__description {
+   font-size: 17px;
+   line-height: 160%; 
+   margin-bottom: 40px;
+  }
+  
+  .button {
+    background-color: #FF6C6C;
+    border:none;
+    font-size: 18px;
+    line-height: 160%;
+    color: #FFFFFF;
+    padding: 15px 56px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .button--shadow {
+    box-shadow: 0px 10px 25px rgba(255, 108, 108, 0.5);  
+  }
+  
+  .section {
+    padding-top: 20px;
+    padding-bottom: 100px;
+  }
+  
+  .section__title {
+    margin-bottom: 80px;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    flex-basis: 25%;
+    background: #F8F8F8;
+    box-shadow: 0px 4px 4px rgba(104, 104, 104, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .goods__card {
+    margin-bottom: 30px;
+  }
+  
+  .card__image {
+    margin-bottom: 28px;
+  }
+  
+  .card__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+  }
+  
+  .card__title {
+    font-size: 15px;
+    text-align: left;
+    max-width: 200px;
+  }
+  
+  .card__price {
+    font-size: 36px;
+  }
+  
+  .card__button {
+    width: 100%;
+  }
+  
+  .review-cards {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .review-card {
+    background: #FFFFFF;
+    border: 1px solid #EDEDED;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(131, 131, 131, 0.25);
+    border-radius: 10px;
+    padding: 20px 30px;
+    flex-basis: 24%;
+    margin: 5px;
+  }
+  
+  .review-card__title {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .review-card__text {
+    font-size: 14px;
+    line-height: 21px;  
+  }
+  
+  .footer {
+    background-color: #f8f8f8;
+  }
+  .contacts {
+    display: flex;
+    justify-content: space-between;
+  }
+  .form {
+    flex-basis: 45%;  
+  }
+  .map {
+    flex-basis: 50%;
+  }
+  .input {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(217, 217, 217, 0.25);
+    border-radius: 5px;
+    border: none;
+    padding: 25px 30px;
+    font-size: 14px;
+    outline: none;
+    }
+  .form__inputs {
+    display: flex;
+    justify-content: space-between;
+  }
+  .form__input {
+    width: 47%;
+    margin-bottom: 30px;
+  }
+  .form__textarea {
+    margin-bottom: 30px;
+    display: block;
+    width: 100%;
+  }
+  .form__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .form__button {
+    cursor: pointer;
+  }
+  .social {
+    display: flex;
+  }
+  .social__link {
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  
+  @media (max-width: 1200px) {
+    .container {
+      max-width: 960px;
+    }
+    .header-content__title {
+      font-size: 36px;
+    }
+    .card {
+      flex-basis: 48%;
+    }
+    .card__image {
+      width: 100%;
+    }
+    .review-card {
+      flex-basis: 48%;
+    }
+    .review__card {
+      margin-bottom: 30px;
+    }
+    .button {
+      font-size: 14px;
+      padding: 15px 40px;
+    }
+  }
+  @media (max-width: 990px) {
+    .container {
+      max-width: 760px;
+    }
+    .header-content {
+      flex-direction: column;
+    }
+    .header-content__description {
+      max-width: 500px;
+    }
+    .contacts  {
+      flex-direction: column;
+    }
+    .contacts__form {
+      margin-bottom: 50px;
+    }
+    .review-card {
+      margin-right: 25px;
+    }
+    .review-card:last-child {
+      margin-right: 0;
+    } 
+  }
+  @media (max-width: 768px) {
+    .container {
+      max-width: 90%;
+    }  
+    .top {    
+      flex-direction: column;
+      min-height: 100px;    
+    } 
+    .header-content__title {
+      font-size: 24px;
+    }
+    .header-content__description {
+      font-size: 14px;
+    }  
+    .header-content {
+      text-align: center;
+    }
+    .header-content__image {
+      max-width: 80%;
+    }  
+    .card {
+      flex-basis: 100%;
+    
+  }
